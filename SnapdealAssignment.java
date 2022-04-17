@@ -131,6 +131,8 @@ public class SnapdealAssignment {
 		File destination = new File("./snaps/screenshot1.png");
 		//Copy the image from source to destination
 		FileUtils.copyFile(source, destination);
+		//Close the Current window
+		driver.findElement(By.xpath("//div/i[@class='sd-icon sd-icon-delete-sign']")).click();
 		//Close the browser
 		driver.close();
 
